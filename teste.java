@@ -32,6 +32,7 @@ public class teste {
              +"Numero de vitorias:" + times[i].getQtdVitorias()+"\n"
              +"Numero de derrotas:" + times[i].getQtdDerrotas());
              System.out.println("-----------------------------------------------------");
+             System.out.println(campeonato.ordenacaotimes());
             }
         
        System.out.println("\033[97m" + campeonato.campeao().getNome() +"\033[97m" + " é o campeão!\033[0m");
