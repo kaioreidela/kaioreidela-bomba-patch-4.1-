@@ -54,7 +54,8 @@ public class campeonato  {
 		System.out.println("-----------------------------------------------------");
 		}
 
-		public void ordenacaotimes(){
+		public String ordenacaotimes(){
+			String classifica;
             for (int i = 0; i < times.length; i++) {
                 for (int j = i + 1; j < times.length;j++ ){
                      if(times[i].getQtdPontos() < times[j].getQtdPontos()){
@@ -70,9 +71,10 @@ public class campeonato  {
                         times[j] = aux;
 					 }
                     }
-		
+		        
 				}
-                } 
+				classifica = "1º colocado"+times[0].getNome()+"\n"+"2º colocado"+times[1].getNome()+"\n"+"3º colocado"+times[2].getNome()+"\n"+"4º colocado"+times[3].getNome()+"\n";
+                return classifica; } 
 
 		
 	    public clubes campeao(){
@@ -90,13 +92,3 @@ public class campeonato  {
         }
 }   
 			
-
-
-
-		
-
-		
-	
-     
-	
-	
